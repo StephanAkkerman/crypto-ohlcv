@@ -39,7 +39,6 @@ The `exchange` parameter should be one of the exchanges supported by ccxt, curre
 - 'upbit'
 - 'whitebit'
 - 'zb'
-
 ## Symbols
 Symbol can be any pair available on the specified exchange.
 
