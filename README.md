@@ -39,7 +39,7 @@ Exchange should be one of the exchanges supported by ccxt, currently these are:
 - 'whitebit'
 - 'zb'
 
-Symbol can be any pair availble on the specified exchange./
+Symbol can be any pair availble on the specified exchange.
 Supported time frames are: '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', '1M'.\
 Limit is the number of rows you would like to have returned, leaving this unspecified will return most available.\
 Using since as parameter will change the starting point of gathering the data, this is an integer consisting of UTC timestamp in milliseconds.
