@@ -1,4 +1,10 @@
 # Crypto_OHLCV
+[![Python 3.8](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![MIT License](https://img.shields.io/github/license/StephanAkkerman/Crypto_OHLCV.svg?color=brightgreen)](https://opensource.org/licenses/MIT)
+
+---
+
 Crypto_OHLCV is a simple Python script that lets you fetch historical OHLCV data from ccxt supported exchanges.
 I wrote this script, because my other script focussed solely on Binance, whereas this one supports many exchanges.
 It consists of one simple function called fetchData, that returns a pandas Dataframe, readible by TensorTrade.
@@ -39,6 +45,7 @@ The `exchange` parameter should be one of the exchanges supported by ccxt, curre
 - 'upbit'
 - 'whitebit'
 - 'zb'
+
 ## Symbols
 Symbol can be any pair available on the specified exchange.
 
