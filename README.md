@@ -10,9 +10,10 @@ I wrote this script, because my other script focussed solely on Binance, whereas
 It consists of one simple function called fetchData, that returns a pandas Dataframe, readible by TensorTrade.
 
 ## How to use
-- Add the ohlcv.py to same directory you're working in.
-- Write: `from ohlcv import fetchData`
-- To get the latest 500 daily data points of OHLCV on the BTC/USDT pair from Binance, write: `fetchData(exchange='binance', symbol="BTC/USDT", timeframe='1d', limit=500)`
+- Add `ohlcv.py` located in src to same directory you're working in.
+- Write: `from ohlcv import fetchData`.
+- To get the latest 500 daily data points of OHLCV on the BTC/USDT pair from Binance, write: `fetchData(exchange='binance', symbol="BTC/USDT", timeframe='1d', limit=500)`.
+- The result will be a pandas DataFrame consisting of the latest 500 daily candles of BTC/USDT on Binance.
 
 ## Supported exchanges
 The `exchange` parameter should be one of the exchanges supported by ccxt, currently these are:
@@ -47,11 +48,11 @@ The `exchange` parameter should be one of the exchanges supported by ccxt, curre
 - 'zb'
 
 ## Symbols
-Symbol can be any pair available on the specified exchange.
+`Symbol` can be any pair available on the specified exchange.
 
 ## Time frames
 Supported time frames are: '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', '1M'.
 
 ## Limit
-Limit is the number of rows you would like to have returned, leaving this unspecified will return most available.
-Using since as parameter will change the starting point of gathering the data, this is an integer consisting of UTC timestamp in milliseconds.
+`Limit` is the number of rows you would like to have returned, leaving this unspecified will return most available.
+Using `since` as parameter will change the starting point of gathering the data, this is an integer consisting of UTC timestamp in milliseconds.
