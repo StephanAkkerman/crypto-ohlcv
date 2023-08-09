@@ -16,36 +16,7 @@ It consists of one simple function called `fetch_data()`, that returns a pandas 
 - The result will be a pandas DataFrame consisting of the latest 500 daily candles of BTC/USDT on Binance.
 
 ## Supported exchanges
-The `exchange` parameter should be one of the exchanges supported by ccxt, currently these are:
-- 'binance'
-- 'bitfinex'
-- 'bytetrade'
-- 'ftx'
-- 'kraken'
-- 'poloniex'
-- 'upbit'
-- 'acx'
-- 'bequant'
-- 'bigone'
-- 'bitforex'
-- 'bitkk'
-- 'bitz'
-- 'btcalpha'
-- 'coinex'
-- 'crex24'
-- 'digifinex'
-- 'gateio'
-- 'hitbtc2'
-- 'huobipro'
-- 'huobiru'
-- 'kucoin'
-- 'lbank'
-- 'okex'
-- 'okex3'
-- 'stex'
-- 'upbit'
-- 'whitebit'
-- 'zb'
+The `exchange` parameter should be one of the exchanges supported by ccxt, you can find the supported exchanges [here](https://github.com/ccxt/ccxt/wiki/Exchange-Markets).
 
 ## Symbols
 `Symbol` can be any pair available on the specified exchange.
