@@ -7,7 +7,7 @@
 
 crypto-ohlcv is a simple Python script that lets you fetch historical OHLCV data from ccxt supported exchanges.
 I wrote this script, because my other script focussed solely on Binance, whereas this one supports many exchanges.
-It consists of one simple function called fetchData, that returns a pandas Dataframe, readible by TensorTrade.
+It consists of one simple function called `fetch_data()`, that returns a pandas Dataframe, readible by TensorTrade.
 
 ## How to use
 - Add `ohlcv.py` located in src to same directory you're working in.
