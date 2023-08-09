@@ -11,8 +11,8 @@ It consists of one simple function called fetchData, that returns a pandas Dataf
 
 ## How to use
 - Add `ohlcv.py` located in src to same directory you're working in.
-- Write: `from ohlcv import fetchData`.
-- To get the latest 500 daily data points of OHLCV on the BTC/USDT pair from Binance, write: `fetchData(exchange='binance', symbol="BTC/USDT", timeframe='1d', limit=500)`.
+- Write: `from ohlcv import fetch_data`.
+- To get the latest 500 daily data points of OHLCV on the BTC/USDT pair from Binance, write: `fetch_data(exchange='binance', symbol="BTC/USDT", timeframe='1d', limit=500)`.
 - The result will be a pandas DataFrame consisting of the latest 500 daily candles of BTC/USDT on Binance.
 
 ## Supported exchanges
@@ -55,4 +55,4 @@ Supported time frames are: '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h
 
 ## Limit
 `Limit` is the number of rows you would like to have returned, leaving this unspecified will return most available.
-Using `since` as parameter will change the starting point of gathering the data, this is an integer consisting of UTC timestamp in milliseconds.
+Using `since` as parameter will change the starting point of gathering the data, this is an integer consisting of UTC timestamp in milliseconds. You can also specify it as a string or datetime object, it will automatically be converted to the right format.
